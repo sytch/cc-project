@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -67,10 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'app.wsgi.application'
-
-
-# Database
+WSGI_APPLICATION = 'app.wsgi.application'# Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
@@ -84,6 +82,10 @@ DATABASES = {
         'PORT': os.getenv('DJANGO_DB_PORT', ''),
     }
 }
+
+
+
+
 
 
 # Password validation
@@ -132,3 +134,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SOME_NEW_SETTING = 'test update'
 ANOTHER_NEW_SETTING = 'test update'
 AND_ANOTHER_NEW_SETTING = 'test update'
+
+ADD_A_SETTINGS_VAR = 'test'
+
+SOME_FANCY_VAR = 'from template'
