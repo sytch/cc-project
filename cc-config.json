@@ -1,5 +1,6 @@
 {
     "_template": "https://github.com/sytch/cc-test.git",
+    "blog_app_name": "blog",
     "database_name": "django",
     "database_password": "django",
     "database_root_password": "django",

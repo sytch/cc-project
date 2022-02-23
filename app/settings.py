@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SOME_NEW_SETTING = 'test update'
 ANOTHER_NEW_SETTING = 'test update'
 AND_ANOTHER_NEW_SETTING = 'test update'
+
+ADD_A_SETTINGS_VAR = 'test'
+
+SOME_FANCY_VAR = 'from template'
