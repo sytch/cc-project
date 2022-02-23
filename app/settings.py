@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -71,19 +72,18 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-DATABASES = {
+# https://docs.djangoproject.com/en/4.0/ref/settings/#databasesDATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {'charset': 'utf8mb4'},
-        'NAME': os.getenv('DJANGO_DB_NAME', ''),
-        'USER': os.getenv('DJANGO_DB_USER', ''),
-        'PASSWORD': os.getenv('DJANGO_DB_PW', ''),
-        'HOST': os.getenv('DJANGO_DB_HOST', ''),
-        'PORT': os.getenv('DJANGO_DB_PORT', ''),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+
+
+
+
 
 
 # Password validation
@@ -132,3 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SOME_NEW_SETTING = 'test update'
 ANOTHER_NEW_SETTING = 'test update'
 AND_ANOTHER_NEW_SETTING = 'test update'
+
+ADD_A_SETTINGS_VAR = 'test'
+
+SOME_FANCY_VAR = 'from template'
