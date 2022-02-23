@@ -5,6 +5,7 @@
     "database_password": "django",
     "database_root_password": "django",
     "database_user": "django",
+    "db": "mysql",
     "db_service_name": "db",
     "django_service_name": "django",
     "local_url": "api.myapp.lo",
