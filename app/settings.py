@@ -68,8 +68,11 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'app.wsgi.application'# Database
+WSGI_APPLICATION = 'app.wsgi.application'
+
+# Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+
 
 DATABASES = {
     'default': {
@@ -82,6 +85,7 @@ DATABASES = {
         'PORT': os.getenv('DJANGO_DB_PORT', ''),
     }
 }
+
 
 
 
